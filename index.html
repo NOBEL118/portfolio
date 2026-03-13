@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>XENON</title>
+  <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- ══════════════ NAVBAR ══════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">Xenon<span class="dot">.</span></div>
+    <ul class="nav-links">
+      <li><a href="#home" class="nav-link active">Home</a></li>
+      <li><a href="#content" class="nav-link">Content</a></li>
+      <li><a href="#pricing" class="nav-link">Pricing</a></li>
+      <li><a href="#contact" class="nav-link">Contact Us</a></li>
+    </ul>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+      <span class="theme-icon">☀</span>
+    </button>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#home" class="mob-link">Home</a></li>
+      <li><a href="#content" class="mob-link">Content</a></li>
+      <li><a href="#pricing" class="mob-link">Pricing</a></li>
+      <li><a href="#contact" class="mob-link">Contact Us</a></li>
+    </ul>
+  </div>
+
+  <!-- ══════════════ HOME / HERO ══════════════ -->
+  <section class="hero" id="home">
+    <div class="hero-bg-text">EDITOR</div>
+    <div class="hero-content">
+      <div class="hero-tag reveal">Available for work</div>
+      <h1 class="hero-name reveal">XENON<br/><span class="outline-text">RAY</span></h1>
+      <p class="hero-sub reveal">Video Editor &amp; Motion Designer</p>
+      <div class="hero-skills reveal">
+        <span class="skill-tag">Premiere Pro</span>
+        <span class="skill-tag">After Effects</span>
+        <span class="skill-tag">DaVinci Resolve</span>
+        <span class="skill-tag">Filmora</span>
+        <span class="skill-tag">Color Grading</span>
+        <span class="skill-tag">Motion Graphics</span>
+      </div>
+      <div class="hero-cta reveal">
+        <a href="#content" class="btn-primary">View My Work</a>
+        <a href="#contact" class="btn-outline">Hire Me</a>
+      </div>
+    </div>
+    <div class="hero-image-wrap reveal">
+      <!-- DUMMY IMAGE SPACE  remove it after real image-->
+      <div class="hero-img-placeholder">
+        <div class="placeholder-inner">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+          <p>Profile Photo</p>
+          <span>800 × 1000 px</span>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ══════════════ CONTENT / PORTFOLIO ══════════════ -->
+  <section class="content-section" id="content">
+    <div class="section-header reveal">
+      <span class="section-label">02 — Portfolio</span>
+      <h2 class="section-title">Selected<br/><em>Works</em></h2>
+    </div>
+
+    <!-- Thumbnails Row -->
+    <div class="thumbnails-grid">
+      <div class="thumb-card reveal" style="--delay:0.1s">
+        <!-- DUMMY THUMBNAIL 1 -->
+        <div class="thumb-placeholder">
+          <div class="play-icon">▶</div>
+          <div class="thumb-label">Thumbnail 01</div>
+          <div class="thumb-size">1280 × 720 px</div>
+        </div>
+        <div class="thumb-info">
+          <h3>Brand Commercial</h3>
+          <p>Product launch edit — 60s TVC</p>
+        </div>
+      </div>
+
+      <div class="thumb-card reveal" style="--delay:0.2s">
+        <!-- DUMMY THUMBNAIL 2 -->
+        <div class="thumb-placeholder">
+          <div class="play-icon">▶</div>
+          <div class="thumb-label">Thumbnail 02</div>
+          <div class="thumb-size">1280 × 720 px</div>
+        </div>
+        <div class="thumb-info">
+          <h3>Music Video</h3>
+          <p>Cinematic storytelling — 3 min</p>
+        </div>
+      </div>
+
+      <div class="thumb-card reveal" style="--delay:0.3s">
+        <!-- DUMMY THUMBNAIL 3 -->
+        <div class="thumb-placeholder">
+          <div class="play-icon">▶</div>
+          <div class="thumb-label">Thumbnail 03</div>
+          <div class="thumb-size">1280 × 720 px</div>
+        </div>
+        <div class="thumb-info">
+          <h3>Short Film</h3>
+          <p>Award-winning narrative — 8 min</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Videos Row -->
+    <div class="videos-grid">
+      <div class="video-card reveal" style="--delay:0.1s">
+        <!-- DUMMY VIDEO 1 -->
+        <div class="video-placeholder">
+          <div class="video-icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="5,3 19,12 5,21"/></svg>
+          </div>
+          <div class="video-label">Video 01</div>
+          <div class="video-size">1920 × 1080 px · MP4</div>
+        </div>
+        <div class="video-info">
+          <h3>Documentary Cut</h3>
+          <span class="tag">Cinematic</span>
+        </div>
+      </div>
+
+      <div class="video-card reveal" style="--delay:0.2s">
+        <!-- DUMMY VIDEO 2 -->
+        <div class="video-placeholder">
+          <div class="video-icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="5,3 19,12 5,21"/></svg>
+          </div>
+          <div class="video-label">Video 02</div>
+          <div class="video-size">1920 × 1080 px · MP4</div>
+        </div>
+        <div class="video-info">
+          <h3>Social Media Reel</h3>
+          <span class="tag">Fast-paced</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ SKILLS ══════════════ -->
+  <section class="skills-section" id="skills">
+    <div class="skills-inner">
+      <div class="skills-left reveal">
+        <span class="section-label">01 — About</span>
+        <h2 class="section-title">Name &amp;<br/><em>Skills</em></h2>
+        <p class="about-text">Hi, I'm <strong>XENON RAY</strong> — a video editor with 5+ years of experience turning raw footage into compelling stories. I specialize in commercial, narrative, and social content that drives results.</p>
+        <div class="software-list">
+          <div class="software-item"><span class="sw-dot"></span>Adobe Premiere Pro</div>
+          <div class="software-item"><span class="sw-dot"></span>After Effects</div>
+          <div class="software-item"><span class="sw-dot"></span>DaVinci Resolve</div>
+          <div class="software-item"><span class="sw-dot"></span>Final Cut Pro</div>
+          <div class="software-item"><span class="sw-dot"></span>Filmora</div>
+          <div class="software-item"><span class="sw-dot"></span>Audition</div>
+        </div>
+      </div>
+      <div class="skills-right reveal">
+        <div class="stat-block">
+          <span class="stat-num">5+</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+        <div class="stat-block">
+          <span class="stat-num">120+</span>
+          <span class="stat-label">Projects Delivered</span>
+        </div>
+        <div class="stat-block">
+          <span class="stat-num">40+</span>
+          <span class="stat-label">Happy Clients</span>
+        </div>
+        <!-- DUMMY SKILLS IMAGE -->
+        <div class="skills-img-placeholder">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+          <p>Work Setup Photo</p>
+          <span>600 × 400 px</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ PRICING ══════════════ -->
+  <section class="pricing-section" id="pricing">
+    <div class="section-header reveal">
+      <span class="section-label">03 — Pricing</span>
+      <h2 class="section-title">Simple<br/><em>Packages</em></h2>
+    </div>
+    <div class="pricing-grid">
+      <div class="price-card reveal" style="--delay:0.1s">
+        <div class="price-tier">Starter</div>
+        <div class="price-amount">$149<span>/video</span></div>
+        <ul class="price-features">
+          <li>Up to 3 min edit</li>
+          <li>Basic color grade</li>
+          <li>2 revisions</li>
+          <li>Music sync</li>
+          <li>3-day delivery</li>
+        </ul>
+        <a href="#contact" class="btn-price">Get Started</a>
+      </div>
+      <div class="price-card featured reveal" style="--delay:0.2s">
+        <div class="price-badge">Most Popular</div>
+        <div class="price-tier">Pro</div>
+        <div class="price-amount">$349<span>/video</span></div>
+        <ul class="price-features">
+          <li>Up to 10 min edit</li>
+          <li>Advanced color grade</li>
+          <li>Motion graphics</li>
+          <li>5 revisions</li>
+          <li>Sound design</li>
+          <li>5-day delivery</li>
+        </ul>
+        <a href="#contact" class="btn-price featured-btn">Get Started</a>
+      </div>
+      <div class="price-card reveal" style="--delay:0.3s">
+        <div class="price-tier">Premium</div>
+        <div class="price-amount">$699<span>/video</span></div>
+        <ul class="price-features">
+          <li>Unlimited length</li>
+          <li>Full post-production</li>
+          <li>VFX &amp; compositing</li>
+          <li>Unlimited revisions</li>
+          <li>Priority delivery</li>
+        </ul>
+        <a href="#contact" class="btn-price">Get Started</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ CONTACT ══════════════ -->
+  <section class="contact-section" id="contact">
+    <div class="contact-inner">
+      <div class="contact-left reveal">
+        <span class="section-label">04 — Contact</span>
+        <h2 class="section-title">Let's Work<br/><em>Together</em></h2>
+        <p class="contact-sub">Have a project in mind? Let's create something cinematic.</p>
+        <div class="contact-links">
+          <a href="mailto:hello@alexisray.com" class="contact-item">
+            <span class="c-icon">✉</span>
+            <span>hello@alexisray.com</span>
+          </a>
+          <a href="tel:+11234567890" class="contact-item">
+            <span class="c-icon">✆</span>
+            <span>+1 (123) 456-7890</span>
+          </a>
+        </div>
+      </div>
+      <form class="contact-form reveal" id="contactForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label>Name</label>
+            <input type="text" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" placeholder="your@email.com" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Project Type</label>
+          <select>
+            <option value="">Select a package</option>
+            <option>Starter — $149</option>
+            <option>Pro — $349</option>
+            <option>Premium — $699</option>
+            <option>Custom</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea rows="4" placeholder="Tell me about your project..."></textarea>
+        </div>
+        <button type="submit" class="btn-submit">Send Message <span>→</span></button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ══════════════ FOOTER ══════════════ -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-logo">RAY<span class="dot">.</span></div>
+      <div class="footer-nav">
+        <a href="#home">Home</a>
+        <a href="#content">Content</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact Us</a>
+      </div>
+      <div class="social-links">
+        <a href="https://www.youtube.com" class="social-btn" aria-label="YouTube" target="_blank"">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1C24 15.9 24 12 24 12s0-3.9-.5-5.8zM9.7 15.5V8.5l6.3 3.5-6.3 3.5z"/></svg>
+        </a>
+        <a href="https://www.instagram.com" class="social-btn" aria-label="Instagram" target="_blank">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 3.3.2 4.8 1.7 5 5 .1 1.3.1 1.6.1 4.8s0 3.5-.1 4.8c-.2 3.2-1.7 4.8-5 5-1.3.1-1.6.1-4.9.1s-3.6 0-4.9-.1c-3.3-.2-4.8-1.8-5-5-.1-1.3-.1-1.6-.1-4.8s0-3.5.1-4.8C2.3 4 3.9 2.4 7.1 2.3c1.3-.1 1.6-.1 4.9-.1zm0-2.2C8.7 0 8.3 0 7.1.1 2.7.3.3 2.7.1 7.1 0 8.3 0 8.7 0 12s0 3.7.1 4.9C.3 21.4 2.7 23.7 7.1 23.9 8.3 24 8.7 24 12 24s3.7 0 4.9-.1c4.4-.2 6.8-2.5 6.9-6.9.1-1.2.1-1.6.1-4.9s0-3.7-.1-4.9C23.7 2.7 21.3.3 16.9.1 15.7 0 15.3 0 12 0zm0 5.8a6.2 6.2 0 1 0 0 12.4A6.2 6.2 0 0 0 12 5.8zm0 10.2a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.4-11.8a1.4 1.4 0 1 0 0 2.8 1.4 1.4 0 0 0 0-2.8z"/></svg>
+        </a>
+        <a href="https://www.x.com" class="social-btn" aria-label="Twitter/X" target="_blank">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.2 2h3.5l-7.6 8.7 9 11.9h-7l-5.5-7.2-6.3 7.2H1.3l8.1-9.3L.9 2h7.1l5 6.6L18.2 2zm-1.2 18.5h1.9L6.9 3.9H4.8l12.2 16.6z"/></svg>
+        </a>
+        <a href="#" class="social-btn" aria-label="LinkedIn" target="_blank">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.4 20.4h-3.6v-5.6c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.7H9.4V9h3.4v1.6h.1c.5-.9 1.6-1.8 3.3-1.8 3.5 0 4.2 2.3 4.2 5.4v6.2zM5.3 7.4a2.1 2.1 0 1 1 0-4.2 2.1 2.1 0 0 1 0 4.2zm1.8 13H3.5V9h3.6v11.4zM22.2 0H1.8A1.8 1.8 0 0 0 0 1.8v20.4A1.8 1.8 0 0 0 1.8 24h20.4A1.8 1.8 0 0 0 24 22.2V1.8A1.8 1.8 0 0 0 22.2 0z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Xenon Ray. All rights reserved.</p>
+      <p>Designed with intention.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
