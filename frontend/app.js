@@ -154,7 +154,7 @@ document.addEventListener('DOMContentLoaded', () => {;
             pack: document.getElementById("package").value,
             message: document.getElementById("message").value
         };
-        const res = await fetch("http://localhost:5000/contact",{  // should be backend route :)
+        const res = await fetch("https://portfolio-backend-7car.onrender.com/contact",{  // should be backend route :)
             method:"POST",
             headers:{
                 "Content-Type":"application/json"
