@@ -147,7 +147,6 @@ document.addEventListener('DOMContentLoaded', () => {;
     e.preventDefault();
     try{
         submitBtn.textContent = "Sending message...";
-        submitBtn.style.color = "#d4eb00";
         const data = {
             name: document.getElementById("name").value,
             email: document.getElementById("email").value,
@@ -163,7 +162,6 @@ document.addEventListener('DOMContentLoaded', () => {;
         });
         const result = await res.json();
         submitBtn.textContent = result.message;
-        submitBtn.style.color = "#baa8a8";
         contactForm.reset();
     }
     catch(err){
