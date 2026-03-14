@@ -265,28 +265,28 @@
         <div class="form-row">
           <div class="form-group">
             <label>Name</label>
-            <input type="text" placeholder="Your name" required />
+            <input type="text" placeholder="Your name" id="name" name="name" required />
           </div>
           <div class="form-group">
             <label>Email</label>
-            <input type="email" placeholder="your@email.com" required />
+            <input type="email" placeholder="your@email.com" id="email" name="email" required />
           </div>
         </div>
         <div class="form-group">
           <label>Project Type</label>
-          <select>
+          <select id="package" required>
             <option value="">Select a package</option>
-            <option>Starter — $149</option>
-            <option>Pro — $349</option>
-            <option>Premium — $699</option>
-            <option>Custom</option>
+            <option value="starter">$149</option>
+            <option value="pro">$349</option>
+            <option value="premium">$699</option>
+            <option value="custom">Custom</option>
           </select>
         </div>
         <div class="form-group">
           <label>Message</label>
-          <textarea rows="4" placeholder="Tell me about your project..."></textarea>
+          <textarea rows="4" placeholder="Tell me about your project..." id="message" name="message" required></textarea>
         </div>
-        <button type="submit" class="btn-submit">Send Message <span>→</span></button>
+        <button type="submit" class="btn-submit" id="submitBtn">Send Message <span>→</span></button>
       </form>
     </div>
   </section>

@@ -10,7 +10,7 @@
    - Form submission feedback
 ══════════════════════════════════════════ */
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {;
 
   /* ── Elements ── */
   const navbar       = document.getElementById('navbar');
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const sections     = document.querySelectorAll('section[id]');
   const revealEls    = document.querySelectorAll('.reveal');
   const contactForm  = document.getElementById('contactForm');
-
+  const submitBtn    = document.getElementById('submitBtn');
   /* ══════════════════════════════════════
      1. NAVBAR — scroll effect
   ══════════════════════════════════════ */
@@ -143,34 +143,34 @@ document.addEventListener('DOMContentLoaded', () => {
   /* ══════════════════════════════════════
      7. CONTACT FORM — submission feedback
   ══════════════════════════════════════ */
-  if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
-      e.preventDefault();
-
-      const btn = contactForm.querySelector('.btn-submit');
-      const originalText = btn.innerHTML;
-
-      // Loading state
-      btn.innerHTML = 'Sending... <span>⋯</span>';
-      btn.disabled = true;
-      btn.style.opacity = '0.7';
-
-      // Simulate send (replace with real API call)
-      setTimeout(() => {
-        btn.innerHTML = 'Message Sent! <span>✓</span>';
-        btn.style.background = '#4caf50';
-
-        setTimeout(() => {
-          btn.innerHTML = originalText;
-          btn.disabled = false;
-          btn.style.opacity = '1';
-          btn.style.background = '';
-          contactForm.reset();
-        }, 3000);
-      }, 1500);
-    });
-  }
-
+  contactForm.addEventListener("submit", async (e)=>{
+    e.preventDefault();
+    try{
+        submitBtn.textContent = "Sending message...";
+        submitBtn.style.color = "#d4eb00";
+        const data = {
+            name: document.getElementById("name").value,
+            email: document.getElementById("email").value,
+            pack: document.getElementById("package").value,
+            message: document.getElementById("message").value
+        };
+        const res = await fetch("http://localhost:5000/contact",{  // should be backend route :)
+            method:"POST",
+            headers:{
+                "Content-Type":"application/json"
+            },
+            body: JSON.stringify(data)
+        });
+        const result = await res.json();
+        submitBtn.textContent = result.message;
+        submitBtn.style.color = "#baa8a8";
+        contactForm.reset();
+    }
+    catch(err){
+      submitBtn.textContent = "Something went wrong";
+      submitBtn.style.color = "#f15c5c";
+    }
+  });
   /* ══════════════════════════════════════
      8. PLACEHOLDER HOVER INTERACTION
      (Visual feedback on dummy media cards)
@@ -214,5 +214,5 @@ document.addEventListener('DOMContentLoaded', () => {
   // No extra DOM manipulation needed — handled via CSS animation above.
 
   console.log('%c AR Portfolio loaded ✓', 'color: #e8ff47; font-family: monospace; font-size: 14px;');
-
+  
 });
